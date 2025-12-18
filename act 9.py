@@ -1,0 +1,5 @@
+name = str(input("Enter your name: "))
+age = int(input("Enter your age: "))
+height = float(input("Enter your height in centimeters: "))
+print ("Hi " , name + ". You are " + str(height) + " at the age of " + str(age) + ". Next year you'll be " + str(age + 1))
+print (f"Hi {name.upper()}. You are {height} at the age of {age} Next year you'll be {age + 1}")

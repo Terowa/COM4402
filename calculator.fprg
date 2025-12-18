@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calculator"/>
+        <attribute name="authors" value="to8crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-09 02:12:35 PM"/>
+        <attribute name="created" value="dG84Y3J0O0FNVEQyMDQtMjI7MjAyNS0xMi0wOTswMToxODozNiBQTTsyNDg1"/>
+        <attribute name="edited" value="dG84Y3J0O0FNVEQyMDQtMjI7MjAyNS0xMi0wOTswMjoxMjozNSBQTTsyOzI1ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total, price, current, payment" type="Integer" array="False" size=""/>
+            <assign variable="current" expression="0"/>
+            <output expression="&quot;input price&quot;" newline="True"/>
+            <input variable="price"/>
+            <while expression="price&gt;0">
+                <assign variable="total" expression="price + current"/>
+                <assign variable="current" expression="total"/>
+                <output expression="&quot;input price&quot;" newline="True"/>
+                <input variable="price"/>
+            </while>
+            <if expression="current &gt; 100">
+                <then>
+                    <assign variable="payment" expression="current - (current/10)"/>
+                </then>
+                <else>
+                    <assign variable="payment" expression="current"/>
+                </else>
+            </if>
+            <output expression="payment" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

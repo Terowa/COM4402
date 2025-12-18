@@ -1,0 +1,1 @@
+print ("Name: Terry \n Age: 21\n Course: CompSci")
